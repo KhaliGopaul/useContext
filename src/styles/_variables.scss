@@ -1,0 +1,16 @@
+$myColor: red;
+$bkColor: peru;
+$bkcolorSecondary: darksalmon;
+
+$myFont: Helvetica, sans-serif;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+
+@mixin mateosBorder($myColor, $myWidth) {
+border-radius: 10px;
+border-style: dotted;
+border-width: 10px;
+
+border: $myWidth solid $myColor;
+}

@@ -1,0 +1,42 @@
+@import './variables';
+
+// normalize css
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+$myColor: red;
+
+.App {
+    // background-color: $myColor;
+}
+
+body {
+    font-family: $myFont;
+    font-style: $myFontSize;
+    color: $myColor;
+}
+
+.navigation {
+    width: $myWidth;
+background-color: $bkColor;
+
+& li > a{
+    text-decoration: none;
+}
+
+}
+
+.menu {
+    @include mateosBorder(blue, 1px);
+    background-color: $bkcolorSecondary;
+
+    &__link {
+        background-color: white;
+        border: solid red;
+    }
+}

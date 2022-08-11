@@ -1,18 +1,10 @@
-import {useState, creatContext} from 'react';
-import Menubar from './components/Menubar';
-import Hero from './components/Hero';
-import './App.css';
-
-export const userInfoContext = createContext(null);
+import './styles/_master.scss'
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <UserInfoContext.Provider value={{ user, setUser, isLoggedIn, setIsLoggedIn }}>
-    <Menubar />
-    <Hero />
-    </UserInfoContext.Provider>
+    <div className="App">
+      <h1>our app</h1>
+    </div>
 
 );
 }
